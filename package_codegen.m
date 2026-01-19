@@ -13,6 +13,8 @@ outInfo = fullfile(outRoot, 'info');
 if ~isfolder(outSrc),  mkdir(outSrc);  end
 if ~isfolder(outInfo), mkdir(outInfo); end
 
+#안녕하세요 무야호
+
 keep = {
     [modelName '.cpp']
     [modelName '.h']
@@ -48,3 +50,4 @@ zip(zipFile, outRoot);
 fprintf("OK: %s\n", outRoot);
 fprintf("ZIP: %s\n", zipFile);
 end
+
