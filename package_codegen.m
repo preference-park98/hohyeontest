@@ -1,3 +1,9 @@
+
+#define hello
+
+#ifdef hello
+#endif
+
 function package_codegen(modelName, versionTag)
 if nargin < 1, modelName = 'jetRacer'; end
 if nargin < 2, versionTag = datestr(now,'yyyymmdd_HHMMSS'); end
@@ -50,4 +56,5 @@ zip(zipFile, outRoot);
 fprintf("OK: %s\n", outRoot);
 fprintf("ZIP: %s\n", zipFile);
 end
+
 
